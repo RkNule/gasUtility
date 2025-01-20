@@ -45,7 +45,7 @@ Additionally, it provides tools for customer support representatives to manage a
 
 ## **Setup Instructions**
 
-### **Set Up the MySQL Database**
+## **Set Up the MySQL Database**
 1. Start your MySQL server and open a client (e.g., MySQL Workbench or terminal).
 2. Execute the following SQL script to create the database and tables:
 
