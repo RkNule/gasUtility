@@ -58,7 +58,7 @@ CREATE TABLE service_request (
 );
 
 
-Update Application Properties
+## Update Application Properties
 Configure the database connection in the src/main/resources/application.properties file:
 
 properties
