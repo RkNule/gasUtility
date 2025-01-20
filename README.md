@@ -34,6 +34,8 @@ Additionally, the application provides tools for customer support representative
 1. Start your MySQL server and open a client (e.g., MySQL Workbench or terminal).
 2. Execute the SQL script to create the database and tables.
 
+---
+
 ## Update Application Properties
 Configure the database connection in the src/main/resources/application.properties file:
 
@@ -48,6 +50,8 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 Replace your_db_username and your_db_password with your MySQL credentials.
 
+---
+
 **Build and Run the Application**
 Open a terminal and navigate to the project directory.
 
@@ -61,13 +65,19 @@ mvn spring-boot:run
 Swagger UI for API Testing:
 Open your browser and navigate to: http://localhost:8080/swagger-ui/index.html
 
+---
+
 **Future Enhancements**
 Add JWT authentication for improved security.
 Implement advanced analytics for service requests.
 Enhance the user interface for a better customer experience.
 
+---
+
 **Acknowledgment**
 This project is part of a task assigned by ByNry. I sincerely appreciate the opportunity to work on this real-world problem. While the original task suggested using Django, I leveraged my strengths in Java Spring Boot to complete it effectively and meet the requirements.
+
+---
 
 ## **Contact**
 Developer: Rohan Nule
