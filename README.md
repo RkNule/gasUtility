@@ -71,12 +71,10 @@ CREATE TABLE service_request (
     resolved_at TIMESTAMP,
     FOREIGN KEY (customer_id) REFERENCES customer(id)
 );
-Update Application Properties
+
+##**Update Application Properties**
 In the src/main/resources/application.properties file, update the database connection details as follows:
 
-properties
-Copy
-Edit
 spring.datasource.url=jdbc:mysql://localhost:3306/gas_utility
 spring.datasource.username=your_db_username
 spring.datasource.password=your_db_password
@@ -84,26 +82,28 @@ Replace your_db_username and your_db_password with your MySQL credentials.
 
 Build and Run the Application
 Open a terminal and navigate to the project directory.
-Run the following commands:
-bash
-Copy
-Edit
+
+##**Run the following commands:**
+
 mvn clean install
 mvn spring-boot:run
-Access the Application
+
+**Access the Application**
 Swagger UI for API Testing:
-Open your browser and navigate to:
-http://localhost:8080/swagger-ui/index.html
-Future Enhancements
+Open your browser and navigate to: http://localhost:8080/swagger-ui/index.html
+
+**Future Enhancements**
 Add JWT authentication for improved security.
 Implement advanced analytics for service requests.
 Enhance the user interface for a better customer experience.
-Acknowledgment
-This project is part of a task assigned by Bynry. I sincerely appreciate the opportunity to work on this real-world problem. While the original task suggested using Django, I leveraged my strengths in Java Spring Boot to complete it effectively and meet the requirements.
 
-Contact
+**Acknowledgment**
+This project is part of a task assigned by ByNry. I sincerely appreciate the opportunity to work on this real-world problem. While the original task suggested using Django, I leveraged my strengths in Java Spring Boot to complete it effectively and meet the requirements.
+
+##**Contact**
 Developer: Rohan Nule
 Email: rohannule02@gmail.com
 GitHub: RkNule
-LinkedIn: Rohan Nule
+LinkedIn: https://www.linkedin.com/in/rohan-nule-542ab6297/
+
 Feel free to reach out for any queries or feedback!
