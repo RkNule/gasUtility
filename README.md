@@ -72,7 +72,7 @@ CREATE TABLE service_request (
     FOREIGN KEY (customer_id) REFERENCES customer(id)
 );
 
-##**Update Application Properties**
+## **Update Application Properties**
 In the src/main/resources/application.properties file, update the database connection details as follows:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/gas_utility
@@ -83,7 +83,7 @@ Replace your_db_username and your_db_password with your MySQL credentials.
 Build and Run the Application
 Open a terminal and navigate to the project directory.
 
-##**Run the following commands:**
+## **Run the following commands:**
 
 mvn clean install
 mvn spring-boot:run
@@ -100,7 +100,7 @@ Enhance the user interface for a better customer experience.
 **Acknowledgment**
 This project is part of a task assigned by ByNry. I sincerely appreciate the opportunity to work on this real-world problem. While the original task suggested using Django, I leveraged my strengths in Java Spring Boot to complete it effectively and meet the requirements.
 
-##**Contact**
+## **Contact**
 Developer: Rohan Nule
 Email: rohannule02@gmail.com
 GitHub: RkNule
