@@ -32,31 +32,7 @@ Additionally, the application provides tools for customer support representative
 ### Set Up the MySQL Database
 
 1. Start your MySQL server and open a client (e.g., MySQL Workbench or terminal).
-2. Execute the following SQL script to create the database and tables:
-
-```sql
-CREATE DATABASE gas_utility;
-
-USE gas_utility;
-
-CREATE TABLE customer (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    password VARCHAR(255) NOT NULL
-);
-
-CREATE TABLE service_request (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    request_type VARCHAR(255) NOT NULL,
-    description TEXT,
-    status VARCHAR(50) NOT NULL DEFAULT 'Pending',
-    customer_id BIGINT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    resolved_at TIMESTAMP,
-    FOREIGN KEY (customer_id) REFERENCES customer(id)
-);
-
+2. Execute the SQL script to create the database and tables.
 
 ## Update Application Properties
 Configure the database connection in the src/main/resources/application.properties file:
@@ -72,28 +48,28 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 Replace your_db_username and your_db_password with your MySQL credentials.
 
-Build and Run the Application
+**Build and Run the Application**
 Open a terminal and navigate to the project directory.
 
-Run the following commands:
+**Run the following commands:**
 
 mvn clean install
 mvn spring-boot:run
 
-Access the Application
+**Access the Application**
 
 Swagger UI for API Testing:
 Open your browser and navigate to: http://localhost:8080/swagger-ui/index.html
 
-Future Enhancements
+**Future Enhancements**
 Add JWT authentication for improved security.
 Implement advanced analytics for service requests.
 Enhance the user interface for a better customer experience.
 
-Acknowledgment
+**Acknowledgment**
 This project is part of a task assigned by ByNry. I sincerely appreciate the opportunity to work on this real-world problem. While the original task suggested using Django, I leveraged my strengths in Java Spring Boot to complete it effectively and meet the requirements.
 
-Contact
+## **Contact**
 Developer: Rohan Nule
 Email: rohannule02@gmail.com
 GitHub: RkNule
