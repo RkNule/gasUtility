@@ -80,8 +80,8 @@ This project is part of a task assigned by ByNry. I sincerely appreciate the opp
 ---
 
 ## **Contact**
-Developer: Rohan Nule
-Email: rohannule02@gmail.com
-GitHub: RkNule
-LinkedIn: Rohan Nule
-Feel free to reach out for any queries or feedback!
+-Developer: Rohan Nule
+-Email: rohannule02@gmail.com
+-GitHub: RkNule
+-LinkedIn: Rohan Nule
+-Feel free to reach out for any queries or feedback!
