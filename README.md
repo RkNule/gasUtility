@@ -72,6 +72,8 @@ CREATE TABLE service_request (
     FOREIGN KEY (customer_id) REFERENCES customer(id)
 );
 
+---
+
 ## **Update Application Properties**
 In the src/main/resources/application.properties file, update the database connection details as follows:
 
