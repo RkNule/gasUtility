@@ -1,0 +1,21 @@
+CREATE DATABASE gas_utility;
+
+USE gas_utility;
+
+CREATE TABLE customer (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE service_request (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    request_type VARCHAR(255) NOT NULL,
+    description TEXT,
+    status VARCHAR(50) NOT NULL DEFAULT 'Pending',
+    customer_id BIGINT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    resolved_at TIMESTAMP,
+    FOREIGN KEY (customer_id) REFERENCES customer(id)
+);
